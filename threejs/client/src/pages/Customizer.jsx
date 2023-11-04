@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useSnapshot } from 'valtio'
 
-import config from '../config/config'
 import state from '../store'
-import { download } from '../assets'
-import { downloadCanvasToImage, reader } from '../config/helpers'
+
+import { reader } from '../config/helpers'
 import { EditorTabs, FilterTabs, DecalTypes } from '../config/constants'
 import { fadeAnimation,slideAnimation } from '../config/motion'
 import { ColorPicker, FilePicker, Tab, CustomButton } from '../components'
@@ -96,7 +95,7 @@ const Customizer = () => {
                                 <Tab
                                     key={tab.name}
                                     tab={tab}
-                                    handleClick={() => setActiveEditorTab(tab.name)}
+                                    handleClick={() => setActiveEditorTab( activeEditorTab ? '' : tab.name )}
                                 />
                             ))}
                             {generateTabContent()}

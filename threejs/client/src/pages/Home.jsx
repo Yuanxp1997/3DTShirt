@@ -31,14 +31,14 @@ const Home = () => {
                     <motion.div className='home-content' {...headContainerAnimation}>
                         <motion.div {...headTextAnimation}>
                             <h1 className='head-text'>
-                                3D Shirt <br className='xl:block hidden' />Customizer
+                                3D Shirt <br className='xl:block hidden' /> Customizer
                             </h1>
                         </motion.div>
                         <motion.div className='flex flex-col gap-5' {...headContentAnimation}>
                             <p className='max-w-md font-normal text-600 text-base'>
                                 Create your unique and exclusive shirt with this 3D customization tool. 
-                                <br />Created by <strong> Steven Yuan.</strong>
-                                <br />Powered by <strong>React.JS</strong>{' '} and <strong>Three.JS</strong>
+                                <br />Created by <strong> Steven Yuan</strong>.
+                                <br />Made with <strong>React.JS</strong>{' '} and <strong>Three.JS</strong>.
                             </p>
 
                             <CustomButton 
@@ -48,7 +48,6 @@ const Home = () => {
                                 customStyles='w-fit px-4 py-2.5 font-bold text-sm'
                             />
                         </motion.div>
-                        
                     </motion.div>
                 </motion.section>
             )}

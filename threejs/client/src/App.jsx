@@ -7,7 +7,7 @@ import Canvas from './canvas'
 function App() {
  
   return (
-    <main className='app transition-all ease-in'>
+    <main className='app transition-all ease-in supports-[height:100cqh]:h-[100cqh] supports-[height:100svh]:h-[100svh]'>
       <Home />
       <Canvas />
       <Customizer />
